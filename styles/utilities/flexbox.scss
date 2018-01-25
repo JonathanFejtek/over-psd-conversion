@@ -1,0 +1,69 @@
+/// Styles an element as a flexbox. Equivalent to calling 'display : flex' for
+/// all vendors.
+/// @group Flex Container Utilities
+@mixin flexElement{
+    display : flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+  }
+  
+  /// Styles an element as a flexbox with a given flex flow.
+  /// @param {arg} $type - Type of flex element. {"column", "row",
+  /// "column-reverse", "row-reverse"}
+  /// @group Flex Container Utilities
+  @mixin displayFlex($type){
+    @include flexElement;
+      flex-flow : $type;
+      -webkit-flex-flow : $type;
+  }
+  
+  /// Styles a flexbox with a given content justification.
+  /// @param {arg} $position - Type of justification.
+  /// {"start", "center", "end", "space-around", "space-between"}
+  /// @group Flex Container Utilities
+  @mixin flexJustifyContent($justification){
+      justify-content : $justification;
+      -webkit-justify-content : $justification;
+  }
+  
+  /// Styles a flexbox with a given flex-wrap.
+  /// @param {arg} $wrapType - Type of flex-wrap.
+  /// {"no-wrap", "wrap", "wrap-reverse", "inherit"}
+  /// @group Flex Container Utilities
+  @mixin flexWrap($wrapType){
+      -webkit-flex-wrap: $wrapType;
+      flex-wrap: $wrapTpye;
+  }
+
+
+
+  /// Styles a flex item (child) with a given flex value. Equivalent to using
+/// 'flex: $val' for all vendors.
+/// @param {Number} $val [1] - Flex value for item.
+/// @group Flex Item Utilities
+@mixin flex($val: 1){
+    -webkit-flex : $val;
+    flex : $val;
+  }
+  
+  
+  /// Styles a flex item (child) with a given flex-grow value. Equivalent to using
+  /// 'flex-grow: $val' for all vendors.
+  /// @param {Number} $val [1] - Flex-grow value for item.
+  /// @group Flex Item Utilities
+  @mixin flexGrow($val){
+    -webkit-flex-grow: $val;
+    flex-shrink: $val;
+  }
+  
+  /// Styles a flex item (child) with a given flex-shrink value. Equivalent to using
+  /// 'flex-shrink: $val' for all vendors.
+  /// @param {Number} $val [1] - Flex-shrink value for item.
+  /// @group Flex Item Utilities
+  @mixin flexShrink($val){
+    -webkit-flex-shrink: $val;
+    flex-shrink: $val;
+  }
