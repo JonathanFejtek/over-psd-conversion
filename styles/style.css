@@ -144,6 +144,10 @@ ul {
   max-width: 1172px;
   margin: 0 auto; }
 
+.underlined-header::after {
+  content: url("../assets/header-underline.png");
+  display: block; }
+
 .page-header {
   padding-top: 36px;
   padding-bottom: 36px; }
@@ -290,6 +294,15 @@ ul {
       font-weight: 500;
       font-size: 1rem;
       color: black; }
+
+.header-plant-bg {
+  position: relative; }
+
+.header-plant-bg::after {
+  content: url("../assets/branch-header-image.png");
+  position: absolute;
+  left: 45%;
+  top: 20px; }
 
 .product-options-section .wrapper {
   padding-top: 34px;
@@ -729,7 +742,6 @@ ul {
   flex-wrap: wrap; }
   .instagram-image-row img {
     display: block;
-    margin: auto;
     margin-top: 10px; }
 
 .credit-cards {

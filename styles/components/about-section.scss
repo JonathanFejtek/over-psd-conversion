@@ -38,4 +38,13 @@
             }
         }
     }
+    .header-plant-bg{
+        position : relative;
+    }
+    .header-plant-bg::after{
+        content : url("../assets/branch-header-image.png");
+        position : absolute;
+        left : 45%;
+        top : 20px;
+    }
 }
