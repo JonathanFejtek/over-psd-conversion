@@ -35,7 +35,7 @@
   /// @group Flex Container Utilities
   @mixin flexWrap($wrapType){
       -webkit-flex-wrap: $wrapType;
-      flex-wrap: $wrapTpye;
+      flex-wrap: $wrapType;
   }
 
 

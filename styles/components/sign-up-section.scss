@@ -1,0 +1,33 @@
+@mixin setupSignUpSection(){
+    .sign-up-section{
+        text-align : center;
+        h3{
+            padding-top : 30px;
+            padding-bottom : 30px;
+            text-align : center;
+            @include sectionHeaderTypography();
+        }
+        p{
+            
+            width : 48%;
+            margin : 0 auto;
+            margin-bottom : 80px;
+            font-size : 0.9rem;
+            line-height : 26px;
+            color : $grey;
+            font-weight : 300;
+        }
+    
+        input{
+            width : 70%;
+            margin : 0 auto;
+            height : 48px;
+            border-style : none none solid none;
+            border-width: 1px;
+            border-color : $grey;
+            color : $grey;
+            font-size : 0.9rem;
+            font-weight : 300;
+        }
+    }
+}

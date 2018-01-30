@@ -1,0 +1,70 @@
+
+
+@mixin setupPageHeader(){
+    .page-header{
+        padding-top : 36px;
+        padding-bottom : 36px;
+        img{
+            display : block;
+        }
+    }
+
+    @include pageHeaderColumnSetup();
+    @include pageHeaderColumn1();
+
+    .page-header-col2{
+        justify-content : center;
+    }
+
+    @include pageHeaderColumn3();
+}
+
+
+@mixin pageHeaderColumnSetup(){
+    .page-header-col1, .page-header-col2, .page-header-col3{
+        width : calc(100% * 1/3);
+       @include displayFlex(row);
+    }
+}
+
+@mixin pageHeaderColumn1(){
+    .page-header-col1 {
+        text-transform : uppercase;
+        font-size : 0.87rem;
+        font-weight : 600;
+        ul{
+            width : 100%;
+        }
+    
+        a{
+            color : black;
+        }
+        
+        li{
+             margin-right : 40px
+        }
+        li:last-of-type{
+            margin-right : 0px;
+        }
+    
+        li:first-of-type a{
+            color : $grey;
+        }
+    }
+}
+
+@mixin pageHeaderColumn3(){
+    .page-header-col3{
+        justify-content : flex-end;
+        a{
+            margin-left : 30px;
+        }
+        a:first-of-type{
+            margin-left : 0px;
+        }
+    }
+}
+
+
+
+
