@@ -144,9 +144,14 @@ ul {
   max-width: 1172px;
   margin: 0 auto; }
 
+.underlined-header {
+  display: relative; }
+
 .underlined-header::after {
   content: url("../assets/header-underline.png");
-  display: block; }
+  position: relative;
+  display: block;
+  top: -26px; }
 
 .page-header {
   padding-top: 36px;
@@ -437,6 +442,11 @@ ul {
     padding-top: 5px;
     font-size: 1.2rem;
     font-weight: 300; }
+  .product-row-columnItem .original-price {
+    color: #888890;
+    font-size: 0.9rem;
+    font-weight: 200;
+    text-decoration: line-through; }
 
 .product-row-columnItem:first-of-type {
   margin-left: 0px; }
@@ -596,12 +606,30 @@ ul {
 .testimonials-section-left, .testimonials-section-right {
   width: 50%; }
 
+.circular-select-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #888890;
+  margin: 10px;
+  border-radius: 20px;
+  transition: ease 0.7s;
+  box-shadow: 0px 0px 0px 0px rgba(14, 14, 145, 0.1); }
+
+.circular-select-icon:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 0px 2px rgba(136, 136, 144, 0.5);
+  cursor: pointer; }
+
+.testimonials-left-select-bar {
+  margin-top: 50px;
+  justify-content: center; }
+
 .blog-section {
   padding-top: 70px;
   padding-bottom: 70px; }
   .blog-section h3 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 2.3rem;
     font-weight: 400; }
@@ -683,7 +711,10 @@ ul {
   margin-right: 0px; }
 
 .page-footer {
-  margin-top: 100px; }
+  padding-top: 100px;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2); }
   .page-footer p {
     padding-top: 48px;
     padding-bottom: 48px; }
@@ -705,7 +736,13 @@ ul {
     padding-bottom: 20px;
     margin-bottom: 40px;
     font-size: 1.45rem;
-    font-weight: 300; }
+    font-weight: 300;
+    position: relative; }
+  .page-footer h3:after {
+    content: url("../assets/footer-header-underline.png");
+    position: absolute;
+    left: 0;
+    top: 20px; }
 
 .page-footer-col1 p {
   color: #888890;
@@ -728,9 +765,6 @@ ul {
   .social-media-row li {
     margin-right: 38px; }
 
-.page-footer-top {
-  margin-bottom: 100px; }
-
 .page-footer-col2 li, .page-footer-col3 li {
   padding-bottom: 14px;
   font-size: 0.85rem; }
@@ -746,18 +780,26 @@ ul {
 
 .credit-cards {
   margin-top: 40px; }
+  .credit-cards img {
+    margin-right: 12px; }
 
-.page-footer-bottom h5 {
-  color: #888890;
-  font-weight: 200;
-  font-size: 0.9rem; }
-.page-footer-bottom em {
-  color: black; }
+.page-footer-bottom {
+  padding: 40px;
+  margin-top: 100px;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2); }
+  .page-footer-bottom h5 {
+    color: #888890;
+    font-weight: 200;
+    font-size: 0.9rem; }
+  .page-footer-bottom em {
+    color: black; }
 
 @media (max-width: 1180px) {
   .wrapper {
-    width: 96%; } }
-@media (max-width: 1100px) {
+    width: 94%; }
+
   .page-footer-top {
     flex-wrap: wrap; }
     .page-footer-top .wrapper {
@@ -767,16 +809,13 @@ ul {
     .page-footer-top .page-footer-col2 {
       order: 3; }
     .page-footer-top .page-footer-col3 {
-      order: 4; }
-    .page-footer-top h3 {
-      margin-bottom: 10px;
-      padding-bottom: 5px; } }
+      order: 4; } }
 @media (max-width: 1040px) {
   .testimonials-section .wrapper {
     flex-wrap: wrap; }
 
   .testimonials-section-left, .testimonials-section-right {
-    width: 95%;
+    width: 100%;
     margin: 0 auto; }
 
   .testimonials-section-right {
@@ -785,14 +824,13 @@ ul {
 
   .blog-section .blog-row {
     margin: auto;
-    width: 95%;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between; }
   .blog-section .blog-row-item {
     width: calc(1/2 * (100% - 40px));
     margin: 0 auto;
     margin-top: 40px; } }
-/* Portrait tablet and small desktops */
 @media (max-width: 960px) {
   .page-header-col2 {
     order: 3;
@@ -810,11 +848,11 @@ ul {
     flex-wrap: wrap; }
 
   .product-options-left {
-    width: 95%;
+    width: 100%;
     margin: auto; }
 
   .product-options-right {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 30px; }
 
@@ -828,17 +866,7 @@ ul {
 @media (max-width: 580px) {
   .page-footer-top .page-footer-col1, .page-footer-top .page-footer-col4 {
     width: 100%;
-    margin: 0;
-    text-align: center; }
-  .page-footer-top .page-footer-col1 h4 {
-    margin: 0 auto; }
-  .page-footer-top .social-media-row {
-    justify-content: space-around; }
-    .page-footer-top .social-media-row li {
-      margin: 0; }
-
-  .instagram-image-row {
-    margin: 0 auto; } }
+    margin: 0; } }
 @media (max-width: 540px) {
   .page-header-col1, .page-header-col3 {
     width: 100%;
@@ -855,13 +883,17 @@ ul {
 
   .product-options-right-top-row {
     flex-wrap: wrap; }
+    .product-options-right-top-row .flexRow {
+      margin: 0; }
 
   .product-options-right-top-row .product-options-label {
     margin: 0 auto; }
 
   .product-options-right-top-row-col1, .product-options-right-top-row-col2 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; }
+
+  .product-options-right-top-row-col2 {
     margin-top: 30px; }
 
   .product-options-right-bottom-row .product-options-label {
@@ -875,10 +907,8 @@ ul {
     margin-top: 40px; }
 
   .page-footer-top .page-footer-col2, .page-footer-top .page-footer-col3 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center; } }
-/* Landscape phone to portrait tablet */
+    width: 50%;
+    margin: 0 auto; } }
 @media (max-width: 750px) {
   .partners-section .wrapper {
     justify-content: space-around; }
@@ -893,9 +923,7 @@ ul {
 
   .page-footer-bottom-left, .page-footer-bottom-right {
     width: 100%;
-    margin: 0 auto;
-    text-align: center; } }
-/* Landscape phones and down */
+    margin: 0 auto; } }
 @media (max-width: 500px) {
   .product-row-columnItem {
     width: calc((1/2 * 100%) - 20px);
@@ -907,10 +935,19 @@ ul {
   .popular-products-section ul {
     flex-wrap: wrap; }
     .popular-products-section ul li {
-      width: 100%; } }
+      width: 100%; }
+    .popular-products-section ul a {
+      padding-bottom: 2px;
+      margin-bottom: 6px; } }
 @media (max-width: 400px) {
   .product-row-columnItem {
     width: calc(70%);
-    margin: 0; } }
+    margin: 0; }
+
+  .product-row-columnItem {
+    margin-top: 20px; }
+
+  .product-row-columnItem:first-of-type {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

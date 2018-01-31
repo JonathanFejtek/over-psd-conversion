@@ -16,12 +16,6 @@
             color : black;
         }
 
-        // h3{
-        //     margin-bottom : 10px;
-        //     font-size : 1.5rem;
-        //     font-weight : 300;
-        // }
-
         h5{
             font-size : 1.1rem;
             font-weight : 200;
@@ -38,29 +32,29 @@
 
 @mixin setupProductOptionsColumns(){
     .product-options-left{
-        width : calc(41%);
-        margin-right : 15px;
+        width: calc(41%);
+        margin-right: 15px;
     }
     
     .product-options-right{
-        width : calc(57.26%);
-        margin-left : 15px;
+        width: calc(57.26%);
+        margin-left: 15px;
         
     }
     
     .product-options-right-top-row-col1, .product-options-right-top-row-col2{
-        width : calc(1/2 * (100% - 30px));
+        width: calc(1/2 * (100% - 30px));
     }
     
     
     
     .product-options-right-top-row-col1{
-        margin-right : 15px;
+        margin-right: 15px;
     
     }
     
     .product-options-right-top-row-col2{
-        margin-left : 15px;
+        margin-left: 15px;
     }   
 }
 
@@ -68,57 +62,57 @@
 @mixin setupProductOptionsSection(){
     .product-options-section{
         .wrapper{
-            padding-top : 34px;
-            padding-bottom : 50px;
+            padding-top: 34px;
+            padding-bottom: 50px;
         }
     
         .air-plants{
             background: url("../assets/air-plants-img.png");
-            background-size : cover;
-            background-position : center;
+            background-size: cover;
+            background-position: center;
             
-            padding-left : 27%;
-            padding-right : 27%;
-            padding-top : 230px;
-            padding-bottom : 230px;
-            height : 100%;
+            padding-left: 27%;
+            padding-right: 27%;
+            padding-top: 230px;
+            padding-bottom: 230px;
+            height: 100%;
         }
     
         .office-plants{
             background: url("../assets/office-plants-img.png");
-            background-size : cover;
-            background-position : center;
-            padding-left : 12.5%;
-            padding-right : 12.5%;
-            padding-top : 82px;
-            padding-bottom : 82px;
-            height : 100%;
+            background-size: cover;
+            background-position: center;
+            padding-left: 12.5%;
+            padding-right: 12.5%;
+            padding-top: 82px;
+            padding-bottom: 82px;
+            height: 100%;
         }
     
         .house-plants{
             background: url("../assets/house-plants-img.png");
-            background-size : cover;
-            background-position : center;
-            padding-left : 12.5%;
-            padding-right : 12.5%;
-            padding-top : 82px;
-            padding-bottom : 82px;
-            height : 100%;
+            background-size: cover;
+            background-position: center;
+            padding-left: 12.5%;
+            padding-right: 12.5%;
+            padding-top: 82px;
+            padding-bottom: 82px;
+            height: 100%;
         }
     
         .plant-containers{
             background: url("../assets/plant-containers2.png");
-            background-size : cover;
-            background-position : center;
-            padding-left : 33%;
-            padding-right : 33%;
-            padding-top : 91px;
-            padding-bottom : 91px;
-            height : 100%;
+            background-size: cover;
+            background-position: center;
+            padding-left: 33%;
+            padding-right: 33%;
+            padding-top: 91px;
+            padding-bottom: 91px;
+            height: 100%;
         }
     
         .product-options-right-bottom-row{
-            margin-top : 30px;
+            margin-top: 30px;
         }
     }
 

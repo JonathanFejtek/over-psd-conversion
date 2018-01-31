@@ -1,26 +1,27 @@
 @mixin setupPartnersSection(){
     .partners-section{
-        padding-top : 100px;
-        padding-bottom : 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
         .wrapper{
-            justify-content : space-between;
-            flex-wrap : wrap;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
     
     .partners-section-columnItem{
-        text-align : center;
+        text-align: center;
         img{
-            display : block;
-            margin : 0 auto;
+            display: block;
+            margin: 0 auto;
         }
     }
     
     .partners-section-columnItem:first-of-type{
-        margin-left : 0px;
+        margin-left: 0px;
     }
     
     .partners-section-columnItem:last-of-type{
-        margin-right : 0px;
+        margin-right: 0px;
     }    
 }

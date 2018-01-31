@@ -1,0 +1,128 @@
+@mixin setupPageFooter(){
+    .page-footer{
+        padding-top: 100px;
+        border-style: solid none none none;
+        border-width: 1px;
+        border-color: hsla(0,0,0,0.2);
+        
+        p{
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    
+        .page-footer-top, .page-footer-bottom, {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .social-media-row{
+            justify-content: left;
+        }
+    
+        .instagram-image-row{
+            justify-content: space-between;
+            max-width: 270px;
+        }
+        
+        .page-footer-col1{
+            width: 39.74%;
+        }
+    
+        .page-footer-col2, .page-footer-col3{
+            width: 14%;
+        }
+    
+        .page-footer-col4{
+            width: 23.07%;
+        }
+    
+        h3{
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            font-size: 1.45rem;
+            font-weight: 300;
+            position: relative;
+        }
+    
+        h3:after{
+            content: url("../assets/footer-header-underline.png");
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+    }
+    
+    .page-footer-col1{
+        p{
+            color: $grey;
+            font-size: 0.85rem;
+            font-weight: 300;
+            line-height: 28px;
+        }
+    
+        h4{
+            width: calc(70%);
+            padding-bottom: 16px;
+            color: $grey;
+            font-weight: 300;
+            font-size: 0.85rem;
+    
+        }
+        em{
+           font-style: normal;
+           color: black;
+           font-weight: 700;
+        }
+    }
+    
+    .social-media-row{
+        padding-top: 28px;
+        li{
+            margin-right: 38px;
+        }
+    }
+    
+    .page-footer-col2 li, .page-footer-col3 li{
+        padding-bottom: 14px;
+        font-size: 0.85rem;
+
+        a{
+            color: $grey;
+            font-weight: 300;
+        }     
+    }
+    
+    .instagram-image-row{
+        flex-wrap: wrap;
+
+        img{
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    
+    .credit-cards{
+        margin-top: 40px;
+        img{
+            margin-right : 12px;
+        }
+    }
+    
+    .page-footer-bottom {
+        padding: 40px;
+        margin-top: 100px;
+        border-style: solid none none none;
+        border-width: 1px;
+        border-color: hsla(0,0,0,0.2);
+
+        h5{
+            color: $grey;
+            font-weight: 200;
+            font-size: 0.9rem;
+        }
+
+        em{
+            color: black;
+        }
+    }    
+}

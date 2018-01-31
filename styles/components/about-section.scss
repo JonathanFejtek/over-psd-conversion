@@ -1,50 +1,55 @@
 @mixin setupAboutSection(){
     .home-of-interior-plants{
+        text-align: center;
+        
         .wrapper{
-            padding-top : 102px;
-            padding-bottom : 30px;
+            padding-top: 102px;
+            padding-bottom: 30px;
         }
-        text-align : center;
+        
         h3{
-            padding-top : 42px;
-            padding-bottom : 42px;
+            padding-top: 42px;
+            padding-bottom: 42px;
             @include sectionHeaderTypography();
         }
     
         p{
-            padding-top : 42px;
-            padding-bottom : 30px;
-            padding-left : 17%;
-            padding-right : 17%;
-            color : $grey;
-            font-size : 0.9rem;
-            font-weight : 300;
-            line-height : 25px;
+            padding-top: 42px;
+            padding-bottom: 30px;
+            padding-left: 17%;
+            padding-right: 17%;
+            color: $grey;
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 25px;
         }
     
         h5{
-            padding-top : 30px;
-            padding-bottom : 30px;
-            font-style : italic;
-            font-weight : 200;
-            font-size : 0.9rem;
-            color : $grey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 0.9rem;
+            color: $grey;
+
             em{
-                text-transform : uppercase;
-                font-style : normal;
-                font-weight : 500;
-                font-size : 1rem;
-                color : black;
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                color: black;
             }
         }
     }
+
     .header-plant-bg{
-        position : relative;
+        position: relative;
     }
+
     .header-plant-bg::after{
-        content : url("../assets/branch-header-image.png");
-        position : absolute;
-        left : 45%;
-        top : 20px;
+        content: url("../assets/branch-header-image.png");
+        position: absolute;
+        left: 45%;
+        top: 20px;
     }
 }
