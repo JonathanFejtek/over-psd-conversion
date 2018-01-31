@@ -194,6 +194,22 @@ ul {
     margin-left: 30px; }
   .page-header-col3 a:first-of-type {
     margin-left: 0px; }
+  .page-header-col3 .form-anchor {
+    position: relative; }
+  .page-header-col3 .form-anchor::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #79dad6;
+    color: black;
+    content: '2';
+    right: -9px;
+    top: -9px;
+    text-align: center;
+    padding: 2px;
+    padding-top: 2px;
+    font-size: 0.7rem;
+    border-radius: 10px; }
 
 .page-title-section {
   position: relative;
@@ -681,8 +697,7 @@ ul {
     color: #888890;
     font-weight: 300; }
   .sign-up-section input {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
     height: 48px;
     border-style: none none solid none;
     border-width: 1px;
@@ -690,6 +705,16 @@ ul {
     color: #888890;
     font-size: 0.9rem;
     font-weight: 300; }
+  .sign-up-section .sign-up-input-container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    width: 70%; }
+  .sign-up-section .sign-up-input-container::after {
+    content: url("../assets/email-mail-img.png");
+    position: absolute;
+    right: 0;
+    top: 20px; }
 
 .partners-section {
   padding-top: 100px;
@@ -863,10 +888,28 @@ ul {
   .product-row-columnItem {
     width: calc((1/3 * 100%) - 20px);
     margin: 0; } }
+@media (max-width: 750px) {
+  .partners-section .wrapper {
+    justify-content: space-around; }
+
+  .partners-section-columnItem {
+    width: 33%;
+    margin: 0;
+    margin-top: 20px; } }
+@media (max-width: 700px) {
+  .page-footer-bottom {
+    flex-wrap: wrap; }
+
+  .page-footer-bottom-left, .page-footer-bottom-right {
+    width: 100%;
+    margin: 0 auto; } }
 @media (max-width: 580px) {
   .page-footer-top .page-footer-col1, .page-footer-top .page-footer-col4 {
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+
+  .product-options-section .wrapper {
+    width: 88%; } }
 @media (max-width: 540px) {
   .page-header-col1, .page-header-col3 {
     width: 100%;
@@ -908,21 +951,6 @@ ul {
 
   .page-footer-top .page-footer-col2, .page-footer-top .page-footer-col3 {
     width: 50%;
-    margin: 0 auto; } }
-@media (max-width: 750px) {
-  .partners-section .wrapper {
-    justify-content: space-around; }
-
-  .partners-section-columnItem {
-    width: 33%;
-    margin: 0;
-    margin-top: 20px; } }
-@media (max-width: 700px) {
-  .page-footer-bottom {
-    flex-wrap: wrap; }
-
-  .page-footer-bottom-left, .page-footer-bottom-right {
-    width: 100%;
     margin: 0 auto; } }
 @media (max-width: 500px) {
   .product-row-columnItem {

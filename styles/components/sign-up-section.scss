@@ -8,7 +8,7 @@
             text-align: center;
             @include sectionHeaderTypography();
         }
-        
+
         p{       
             width: 48%;
             margin: 0 auto;
@@ -20,8 +20,7 @@
         }
     
         input{
-            width: 70%;
-            margin: 0 auto;
+            width: 100%;
             height: 48px;
             border-style: none none solid none;
             border-width: 1px;
@@ -29,6 +28,22 @@
             color: $grey;
             font-size: 0.9rem;
             font-weight: 300;
+            
+        }
+
+        .sign-up-input-container{
+            margin: 0 auto;
+            position : relative;
+            display : flex;
+            width : 70%;
+        }
+
+        .sign-up-input-container::after{
+            content : url("../assets/email-mail-img.png");
+            position : absolute;
+            right : 0;
+            top : 20px;
+            
         }
     }
 }
